@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 10px;
+            padding: 0 5% 0 5%;
+        }
+        #parentDiv{
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            padding: 10px;
+            transition: 0.4s ease;
+        }
+        #parentDiv > img{
+            width: 100%;
+            height: 250px;
+        }
+        span{
+            margin-right: 10px;
+            border: 1px solid gray;
+        }
+        #parentDiv:hover{
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        }
+        nav{
+            
+            height: 2.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: teal;
+        }
+        nav > input{
+            width: 70%;
+            height: 1.5rem;
+        }
+        nav > button{
+            height: 1.8rem;
+            width: 7%;
+            background-color: #EDF7F6;
+            border: none;
+        }
+        nav > input:focus{
+            outline-color: darkgreen;
+            outline-offset: 0;
+        }
+        nav > button:active{
+            background-color: #293232;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <nav>
+        <input type="text" placeholder="Search" value="">
+        <button type="submit">Submit</button>
+    </nav>
+    <div class="container"></div>
+
+</body>
+</html>
+
+<script src="project2.js">
+</script>
